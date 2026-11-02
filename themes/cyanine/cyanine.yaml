@@ -939,9 +939,14 @@ metatabs:
   cyhome:
     show: home
     fields:
+      landingpage:
+        type: checkbox
+        label: 'Landingpage'
+        checkboxlabel: 'Show this homepage as a landingpage'
+        description: 'For project homepages (e.g. /it or /books): if checked, this homepage renders as a segmented landingpage with the texts configured below (or the theme defaults). If unchecked, it renders as a normal content page. The base homepage always follows the theme setting "Landingpage"; a checked box forces the landingpage there, too.'
       mlinfo: 
         type: paragraph
-        description: 'If you run a multilanguage page, then you can translate the landingpage for each language below. If you do not use the multilanguage or project feature, leave the fields empty.'
+        description: 'If you run a multilanguage page or a project setup, then you can translate and configure the landingpage for each project homepage below. If you do not use the multilanguage or project feature, leave the fields empty.'
       bloghomepage:
         type: fieldset
         legend: 'Posts on Homepage'
