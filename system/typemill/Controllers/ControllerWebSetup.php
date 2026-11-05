@@ -102,7 +102,8 @@ class ControllerWebSetup extends Controller
 				'mailfromname'	=> $params['username']
 			]);
 
-			$user->setUser($params['username']);
+			# set user with password, otherwise the login would overwrite the userfile without the password
+			$user->setUserWithPassword($params['username']);
 
 			$user->login();
 
